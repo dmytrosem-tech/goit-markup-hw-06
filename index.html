@@ -313,6 +313,29 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button data-modal-close class="cloze-hero-modal-btn">x</button>
+        <form class="callback-form">
+          <p class="md-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label for="user-name" class="callback-md-label">Имя</label>
+          <input class="callback-md-input" type="text" name="user-name" id="user-name">
+          <label for="tel" class="callback-md-label">Телефон</label>
+          <input class="callback-md-input" type="tel" name="tel" id="tel">
+          <label for="email" class="callback-md-label">Почта</label>
+          <input class="callback-md-input" type="email" name="email" id="email">
+          <label for="feedback" class="callback-md-label">Комментарий</label>
+          <textarea class="textarea" name="feedback" id="feedback" cols="" rows="6" placeholder="Введите текст"></textarea>
+          <div class="visually-hidden">
+            <label for="">
+              <input class="callback-md-check-original" type="checkbox" name="license" id="license" value="license">
+              <span class="callback-md-check-txt">Соглашаюсь с рассылкой и принимаю</span> 
+              <a href="" class="modal-license-link">Условия договора</a>
+            </label>
+          </div>
+          <svg class="callback-md-check-icon" width="16" height="15">
+            <use href="./images/sprite.svg#icon-icon-check"></use>
+          </svg>
+          <p class="callback-md-check-txt">Соглашаюсь с рассылкой и принимаю <span class="modal-license-link">Условия договора</span></p>
+          <button type="submit" class="md-submit-btn">Отправить</button>
+        </form>
         </div>
       </div>
     </main>
