@@ -310,19 +310,31 @@
         </div>
       </section>
 
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidde" data-modal>
         <div class="modal">
-          <button data-modal-close class="cloze-hero-modal-btn">x</button>
+          <button data-modal-close class="cloze-hero-modal-btn">
+            <svg class="md-close-btn-icon" width="11" height="11">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
         <form class="callback-form">
           <p class="md-title">Оставьте свои данные, мы вам перезвоним</p>
-          <label for="user-name" class="callback-md-label">Имя</label>
-          <input class="callback-md-input" type="text" name="user-name" id="user-name">
-          <label for="tel" class="callback-md-label">Телефон</label>
-          <input class="callback-md-input" type="tel" name="tel" id="tel">
-          <label for="email" class="callback-md-label">Почта</label>
-          <input class="callback-md-input" type="email" name="email" id="email">
-          <label for="feedback" class="callback-md-label">Комментарий</label>
-          <textarea class="textarea" name="feedback" id="feedback" cols="" rows="6" placeholder="Введите текст"></textarea>
+          <div class="form-field">
+            <label for="user-name" class="callback-md-label">Имя</label>
+            <input class="callback-md-input" type="text" name="user-name" id="user-name">
+          </div>
+          <div class="form-field">
+            <label for="tel" class="callback-md-label">Телефон</label>
+            <input class="callback-md-input" type="tel" name="tel" id="tel">
+          </div>
+          <div class="form-field">
+            <label for="email" class="callback-md-label">Почта</label>
+            <input class="callback-md-input" type="email" name="email" id="email">
+          </div>
+          <div class="form-field">
+            <label for="feedback" class="callback-md-label">Комментарий</label>
+            <textarea class="textarea" name="feedback" id="feedback" cols="" rows="6" placeholder="Введите текст"></textarea>
+          </div>
           <div class="visually-hidden">
             <label for="">
               <input class="callback-md-check-original" type="checkbox" name="license" id="license" value="license">
@@ -330,6 +342,7 @@
               <a href="" class="modal-license-link">Условия договора</a>
             </label>
           </div>
+
           <svg class="callback-md-check-icon" width="16" height="15">
             <use href="./images/sprite.svg#icon-icon-check"></use>
           </svg>
@@ -386,6 +399,21 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <div class="footer-form-field">
+            <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+            <div class="footer-form-input-box">
+              <input type="email" name="mail" class="footer-form-input" placeholder="E-mail">
+              <button type="submit" class="footer-form-submit-btn">
+                Подписаться 
+                <svg class="footer-form-submit-btn-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
 
