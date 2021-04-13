@@ -809,11 +809,51 @@ a:focus {
   color: var(--alternative-text-color);
 }
 
+.md-license-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.callback-md-check-original {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.callback-md-check-custom {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  fill: var(--white-words);
+}
+
+.callback-md-check-original:checked + .callback-md-check-custom {
+  border-color: var(--alternative-text-color);
+  background-image: url(../images/check-full.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.callback-md-check-txt {
+  margin-right: 4px;
+}
+
+.md-submit-btn-box {
+  text-align: center;
+}
+
 .md-submit-btn {
   width: 200px;
   height: 50px;
   background-color: var(--alternative-text-color);
   color: var(--white-words);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 
 .cloze-hero-modal-btn {
